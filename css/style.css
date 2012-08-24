@@ -1,0 +1,170 @@
+.cBox{
+    width:1020px;
+    height:720px;
+}
+/* sidebox related styles start */
+.sidebox{
+    float:right;
+    height:720px;
+    background-color:#F2F1ED;
+    width:300px;
+}
+.notation{
+    width:200px;
+    height:300px;
+    border:1px solid black;
+    overflow-y:scroll;
+}
+.move{
+    float:left;
+    margin:2px;
+}
+.highlightedmove{
+    outline:1px solid black;
+    background-color:#FFFD78;
+}
+/* sidebox related styles end */
+
+/* Board related styles start */
+.board{
+	background: #FFF url('/icons/90.jpg') repeat left top;
+	width:720px;
+	height:720px;
+	position:relative;
+}
+.square{
+	width:90px;
+	height:90px;
+}
+.x_coor{
+    position:absolute;
+    width:720px;
+    height:20px;
+    bottom:0px;
+    left:0px;
+}
+.x_coor_flipped{
+    bottom:auto;
+    top:0px;
+}
+.y_coor{
+    position:absolute;
+    width:20px;
+    height:720px;
+    top: 0px;
+    left:0px;
+}
+.y_coor_flipped{
+    left:auto;
+    right:0px;
+}
+.x_coor>div{
+    width:90px;
+    height:20px;
+    float:left;
+    text-align: right;
+}
+.y_coor>div{
+    width:20px;
+    height:90px;
+}
+.col{
+	width:90px;
+	float:left;
+}
+.dpiece{
+	border: none;
+}
+
+.piece span,.dpiece span{
+	height:90px;
+	width:1px;
+}
+
+.piece, .dpiece{  
+    text-align: center;
+    vertical-align: middle;
+    width: 90px;
+    height:90px;
+}
+.piece *, .dpiece *{
+    vertical-align: middle;
+}
+
+.piece img, .dpiece img{
+	width:60px;
+	height:60px;
+}
+
+
+.piece span, .dpiece span{
+    display: inline-block;
+    height: 100%;
+}
+
+.allowedMove{
+    outline:#00FF00 dotted 4px;
+}
+
+.allowedCapture{
+    outline:red dotted 4px;
+}
+.allowedCastleMove{
+    outline:blue dotted 4px;
+}
+.flip{
+  -webkit-transform: rotate(180deg);  /* Saf3.1+, Chrome */ 
+     -moz-transform: rotate(180deg);  /* FF3.5+  */
+      -ms-transform: rotate(180deg);  /* IE9  */
+       -o-transform: rotate(180deg);  /* Opera 10.5 */ 
+          transform: rotate(180deg);
+            /* below condition not working */
+            /* filter: progid:DXImageTransform.Microsoft.Matrix(M11=-1, M12=-1.2246063538223773e-16, M21=1.2246063538223773e-16, M22=-1, sizingMethod='auto expand');*/ /* IE6–IE9  */
+               zoom: 1;
+}
+.promotion_wrapper{
+    position:absolute;
+    top:300px;
+    width:100%;
+}
+.promotion_box{
+    width:120px;
+    height:120px;
+    margin:0px auto;
+    border:solid 1px black;
+    background-color:#FFFFFF;
+}
+.promotion_box img{
+    width:45px;
+    height:45px;
+}
+/* Board related styles end */
+
+
+/* Fen dialog css */
+.yui3-panel .yui3-button{
+    margin: 0.3em 0.6em;
+}
+.yui3-panel .yui3-panel-content .yui3-widget-bd{
+    text-align: center;
+    padding: 1.5em 0 1.8em;
+}
+.yui3-panel .yui3-panel-content .yui3-widget-ft{
+    border-radius: 0 0 3px 3px;
+    background-color: #F5F4F1;
+    border-top: solid 1px #EAE6DB;
+}
+.yui3-panel .yui3-panel-content {
+    background: none repeat scroll 0 0 white;
+    border: 1px solid #A9A9A9;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    border-radius: 3px;
+    text-align: center;
+}
+
+.yui3-panel .yui3-widget-bd .message{
+    width: 70%;
+    margin: 0 auto;
+    text-align: left;
+    padding: 11px 0 14px 50px;
+}
