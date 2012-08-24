@@ -27,7 +27,7 @@
 
 /* Board related styles start */
 .board{
-	background: #FFF url('/icons/90.jpg') repeat left top;
+	background: #FFF url('../icons/90.jpg') repeat left top;
 	width:720px;
 	height:720px;
 	position:relative;
