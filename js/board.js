@@ -536,7 +536,7 @@ YUI().add('chess_board', function (Y) {
             if(board.one(".promotion_wrapper")){
             board.removeChild(board.one(".promotion_wrapper"));
             }
-            board.append('<div class="promotion_wrapper"><div class="promotion_box"><img src="/icons/' + color + 'q.png" /><img src="/icons/' + color + 'r.png" /><img src="/icons/' + color + 'b.png" /><img src="/icons/' + color + 'n.png" /></div></div>');
+            board.append('<div class="promotion_wrapper"><div class="promotion_box"><img src="icons/' + color + 'q.png" /><img src="icons/' + color + 'r.png" /><img src="icons/' + color + 'b.png" /><img src="icons/' + color + 'n.png" /></div></div>');
             board.one(".promotion_box").delegate('click',this.handlePawnPromotion, 'img', this, promotion_obj);
         },
         handlePawnPromotion: function(e,promotion_obj){
@@ -1168,7 +1168,7 @@ YUI().add('chess_piece', function (Y) {
                 x = this.x,
                 y = this.y,
                 piece_node;
-            piece_node = Y.Node.create('<div class="piece ' + color + 'piece ' + color + type + '"><span></span><img src="/icons/' + color + type + '.png" /></div>');
+            piece_node = Y.Node.create('<div class="piece ' + color + 'piece ' + color + type + '"><span></span><img src="icons/' + color + type + '.png" /></div>');
             board.one(".sq_" + x + y).empty();
             board.one(".sq_" + x + y).append(piece_node);
         },
